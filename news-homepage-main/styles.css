@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    max-width: 1200px;
+    height: 100vh;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+  }
+  .grid-container {
+    display: grid;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 800px;
+    column-gap: 20px;
+    grid-template-columns: repeat(3, 1.4fr);
+    grid-template-rows: 0.5fr 2fr 1.5fr 0.5fr;
+    grid-template-areas:  
+         "main main main "
+         "grid-item1 grid-item1 grid-item3"
+         "grid-item2 grid-item2 grid-item3"
+         "grid-item4 grid-item4 grid-item4"; 
+         transition: all 0.3s ease-in-out;
+        }
+  
+  .grid-item1 {
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    grid-area: grid-item1;
+    /* grid-column-start: 1;
+    grid-column-end:3 ; */
+
+  }
+  .grid-item1 > img{
+    height: 300px;
+    width: 100%;
+  }
+  .grid-item2 {
+    width: 100%;
+    max-height: 220px;
+    display: flex;
+    justify-content: space-between;
+    grid-area: grid-item2;
+    padding-bottom: 1rem;
+  }
+  h1{
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+    color:hsl(240, 100%, 5%)
+  }
+  p{
+    font-size: 16px;
+    width: 100%;
+   color: hsl(236, 13%, 42%);
+    line-height: 1.8;
+  }
+  .reading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  button{
+    background-color:hsl(5, 85%, 63%) ;
+    color: white;
+    letter-spacing: 1.6px;
+    padding: 0.8rem 2.2rem;
+    border-style: none;
+  }
+  
+  .grid-item3 {
+    max-height: 510px;
+    width: 100%;
+    padding: 2.5rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: grid-item3;
+    color: grey;
+    background-color:hsl(240, 100%, 5%);
+     /* Green */
+  }
+  h4{
+    color:hsl(35, 77%, 62%) ;
+    font-size: 1.8rem;
+  }
+  h6{
+font-size: 1.2rem;
+  }
+  grid-item3 span{
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  hr{
+    border: 0;
+    border-bottom: 1px solid grey;
+    background-color:hsl(240, 100%, 5%) ;
+
+  }
+  grid-item3 div{
+    height:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .grid-item4 {
+    max-width: max-content;
+    display: flex;
+    grid-area: grid-item4;
+    flex-direction: row;
+    padding-bottom: 2rem;
+    gap: 5rem;
+  }
+  .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    max-height: 147px;
+    object-fit: cover;
+  }
+  h5{
+    font-size: 1.6rem;
+    color: grey;
+  }
+  .box-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 1rem;
+  }
+  .box-content p{
+    
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  box-content span{
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    max-height: 100px;
+    justify-content: space-evenly;
+  }
+  .box img {
+    max-height: 100px;
+  }
+  .box_content p {
+    font-size: 1rem;
+  }
+  .box_content span {
+    font-size: 0.7rem;
+  }
+  .box_content {
+    padding: 0 1rem;
+    justify-content: space-evenly;
+  }
+
+  
