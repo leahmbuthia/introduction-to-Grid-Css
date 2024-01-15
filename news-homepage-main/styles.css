@@ -5,10 +5,13 @@
 body{
     max-width: 1200px;
     height: 100vh;
+    padding: 40px;
+    font-family: Inter;
 }
 .main{
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 
 }
 
@@ -53,7 +56,12 @@ ul {
     display: flex;
     justify-content: space-between;
     grid-area: grid-item2;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    gap: 1rem;
+  }
+  .grid-item2 h2{
+    font-size: 48px;
+    font-family: 600;
   }
   h1{
     width: 100%;
@@ -84,9 +92,9 @@ ul {
   }
   
   .grid-item3 {
-    max-height: 510px;
+    max-height: 500px;
     width: 100%;
-    padding: 2.5rem 1.2rem;
+    padding: 2.0rem 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -114,7 +122,7 @@ font-size: 1.2rem;
 
   }
   grid-item3 div{
-    height:20%;
+    height:100px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -133,7 +141,7 @@ font-size: 1.2rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 300px;
+    max-width: 260px;
     max-height: 147px;
     object-fit: cover;
   }
@@ -143,13 +151,13 @@ font-size: 1.2rem;
   }
   .box-content{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 0 1rem;
   }
   .box-content p{
-    
-    font-size: 12px;
+
+    font-size: 16px;
     line-height: 1.6;
   }
   box-content span{
@@ -157,11 +165,11 @@ font-size: 1.2rem;
     flex-direction: column;
   }
   .box {
-    max-height: 100px;
+    max-height: 200px;
     justify-content: space-evenly;
   }
   .box img {
-    max-height: 100px;
+    max-height: 150px;
   }
   .box_content p {
     font-size: 1rem;
